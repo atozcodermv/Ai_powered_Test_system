@@ -1,0 +1,180 @@
+.add-exam-page {
+  min-height: calc(100vh - 72px);
+  background:
+    radial-gradient(circle at top left, rgba(102, 69, 235, 0.18), transparent 32%),
+    linear-gradient(180deg, #f6f8ff 0%, #eef3f8 100%);
+}
+
+.add-exam-shell {
+  border-radius: 28px;
+  box-shadow: 0 28px 60px rgba(23, 36, 79, 0.14);
+  background: #ffffff;
+}
+
+.add-exam-aside {
+  position: relative;
+  color: #ffffff;
+  background:
+    linear-gradient(165deg, rgba(17, 34, 68, 0.86), rgba(102, 69, 235, 0.92)),
+    linear-gradient(180deg, #22314f, #5d3fda);
+}
+
+.add-exam-aside::after {
+  content: "";
+  position: absolute;
+  inset: auto -60px -80px auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  filter: blur(2px);
+}
+
+.add-exam-aside__content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 32px;
+  height: 100%;
+}
+
+.add-exam-kicker {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.add-exam-title {
+  margin-bottom: 12px;
+  font-size: clamp(1.9rem, 2vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.add-exam-copy {
+  max-width: 28rem;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+}
+
+.add-exam-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.add-exam-meta .badge {
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.add-exam-note {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(6px);
+}
+
+.add-exam-form-pane {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+}
+
+.add-exam-form-wrap {
+  padding: 40px 32px;
+}
+
+.add-exam-status-badge {
+  padding: 10px 14px;
+  background: rgba(102, 69, 235, 0.12) !important;
+  color: #4d39a7 !important;
+  font-weight: 700;
+}
+
+.add-exam-form-wrap .form-label {
+  margin-bottom: 0.55rem;
+  color: #20324f;
+  font-weight: 600;
+}
+
+.add-exam-form-wrap .form-control,
+.add-exam-form-wrap .form-select,
+.add-exam-form-wrap .input-group-text {
+  min-height: 50px;
+  border: 1px solid #d8deef;
+  border-radius: 16px;
+  box-shadow: none;
+}
+
+.add-exam-form-wrap textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.add-exam-form-wrap .input-group > .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.add-exam-form-wrap .input-group-text {
+  border-left: 0;
+  background: #f4f6fb;
+  color: #51627f;
+  font-weight: 600;
+}
+
+.add-exam-form-wrap .form-control:focus,
+.add-exam-form-wrap .form-select:focus {
+  border-color: rgba(102, 69, 235, 0.55);
+  box-shadow: 0 0 0 0.25rem rgba(102, 69, 235, 0.14);
+}
+
+.add-exam-field-error {
+  margin-top: 8px;
+  color: #d64545;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.add-exam-form-wrap .input-group-text.add-exam-input-group-text--invalid {
+  border-color: #dc3545;
+  color: #b42318;
+  background: #fff5f5;
+}
+
+.add-exam-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.add-exam-submit {
+  min-width: 180px;
+  min-height: 52px;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6645eb, #355ec9);
+  box-shadow: 0 16px 30px rgba(74, 79, 201, 0.28);
+  font-weight: 700;
+}
+
+.add-exam-submit:hover,
+.add-exam-submit:focus,
+.add-exam-submit:active {
+  background: linear-gradient(135deg, #5a3ed1, #2f54b5) !important;
+}
+
+@media (max-width: 991px) {
+  .add-exam-aside__content,
+  .add-exam-form-wrap {
+    padding: 28px 22px;
+  }
+}

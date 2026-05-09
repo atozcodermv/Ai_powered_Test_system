@@ -1,0 +1,112 @@
+.exam-questions-page {
+  min-height: calc(100vh - 72px);
+  background:
+    radial-gradient(circle at top left, rgba(69, 98, 220, 0.14), transparent 28%),
+    linear-gradient(180deg, #f4f7ff 0%, #eef2f9 100%);
+}
+
+.exam-questions-shell {
+  border-radius: 30px;
+  box-shadow: 0 30px 65px rgba(22, 36, 77, 0.12);
+  background: #ffffff;
+}
+
+.exam-questions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 30px 32px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 32%),
+    linear-gradient(140deg, #162f63, #3353b7 52%, #5b58d8);
+}
+
+.exam-questions-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.exam-questions-title {
+  margin-bottom: 10px;
+  font-size: clamp(1.9rem, 2.2vw, 2.5rem);
+  font-weight: 700;
+}
+
+.exam-questions-copy {
+  max-width: 38rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.exam-questions-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.exam-questions-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.exam-questions-badges .badge {
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.exam-questions-cta {
+  min-width: 180px;
+  min-height: 48px;
+  border: 0;
+  border-radius: 16px;
+  color: #1f3170;
+  background: linear-gradient(135deg, #ffffff, #e9efff);
+  box-shadow: 0 14px 28px rgba(15, 28, 69, 0.18);
+  font-weight: 700;
+}
+
+.exam-questions-cta:hover,
+.exam-questions-cta:focus,
+.exam-questions-cta:active {
+  color: #1f3170 !important;
+  background: linear-gradient(135deg, #f9fbff, #dfe8ff) !important;
+}
+
+.exam-questions-body {
+  padding: 30px 32px 34px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+}
+
+@media (max-width: 991px) {
+  .exam-questions-header {
+    flex-direction: column;
+  }
+
+  .exam-questions-actions,
+  .exam-questions-badges {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .exam-questions-header,
+  .exam-questions-body {
+    padding: 24px 20px;
+  }
+
+  .exam-questions-cta {
+    width: 100%;
+  }
+}

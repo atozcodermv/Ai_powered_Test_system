@@ -1,0 +1,140 @@
+.system-check-shell {
+  min-height: calc(100vh - 80px);
+  background: linear-gradient(135deg, #eef6ff 0%, #f8fbff 45%, #f2f8f1 100%);
+  padding: 2rem 0 3rem;
+}
+
+.system-check-card {
+  border: 0;
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(15, 53, 87, 0.12);
+  overflow: hidden;
+}
+
+.system-check-banner {
+  background: linear-gradient(135deg, #123c69 0%, #1d6996 55%, #2e8b57 100%);
+  color: #fff;
+  padding: 2rem;
+}
+
+.system-check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.system-check-item {
+  border: 1px solid #dce8f5;
+  border-radius: 18px;
+  background: #fff;
+  padding: 1rem;
+  min-height: 150px;
+}
+
+.system-check-state {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.system-check-state.pending {
+  background: #eef2f7;
+  color: #536471;
+}
+
+.system-check-state.success {
+  background: #e9f8ef;
+  color: #157347;
+}
+
+.system-check-state.error {
+  background: #fdeaea;
+  color: #b42318;
+}
+
+.system-check-camera-preview {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  object-fit: cover;
+  background: #0f172a;
+  border: 1px solid #dce8f5;
+}
+
+.exam-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1080;
+  padding: 1rem;
+}
+
+.exam-confirm-card {
+  width: min(560px, 100%);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.28);
+  padding: 1.5rem;
+}
+
+.exam-floating-monitor {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 280px;
+  min-width: 220px;
+  max-width: 42vw;
+  min-height: 180px;
+  resize: both;
+  overflow: hidden;
+  z-index: 1050;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.92);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.32);
+}
+
+.exam-floating-monitor video {
+  width: 100%;
+  height: calc(100% - 56px);
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.exam-floating-monitor-bar {
+  height: 56px;
+  padding: 0.75rem 0.9rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.exam-floating-monitor-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 768px) {
+  .exam-floating-monitor {
+    width: 220px;
+    height: 190px;
+    right: 0.75rem;
+    bottom: 0.75rem;
+  }
+}
+
